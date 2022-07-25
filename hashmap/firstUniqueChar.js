@@ -1,5 +1,5 @@
-// Time Complexity O(n)
-// Space Complexity O(n)
+// Time complexity : O(N) since we go through the string of length N two times.
+// Space complexity : O(1) because English alphabet contains 26 letters.
 
 var firstUniqChar = function (s) {
   const map = {}
