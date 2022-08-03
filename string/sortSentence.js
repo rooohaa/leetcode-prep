@@ -1,16 +1,14 @@
 function sortSentence(s) {
   const words = s.split(' ')
-  const sorted = words.sort((a, b) => {
-    let idx1 = a[a.length - 1]
-    let idx2 = b[b.length - 1]
+  const sorted = new Array(words.length)
 
-    return idx1 - idx2
-  })
-  return sorted
-    .map((word) => {
-      return word.slice(0, -1)
-    })
-    .join(' ')
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i]
+    let sliced = word.slice(0, word.length - 1)
+    let pos = word.charAt(word.length - 1)
+  }
+
+  return sorted.join(' ')
 }
 
-console.log(sortSentence('s2 sentence4 This1 a3'))
+console.log(sortSentence('is2 sentence4 This1 a3'))
