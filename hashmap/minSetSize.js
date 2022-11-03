@@ -1,3 +1,6 @@
+// Space complexity O(n)
+// Time Complexity O(n logn)
+
 var minSetSize = function (arr) {
   const map = {};
   const half = arr.length / 2;
